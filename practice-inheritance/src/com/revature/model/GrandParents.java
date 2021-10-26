@@ -5,7 +5,6 @@ public class GrandParents {
 	String lastName;
 	String Address;
 	int totalAge;
-	int milesPerWalk;
 	int caloriesIntake;
 
 	public GrandParents(String lastName, String Address, int totalAge) {
@@ -15,11 +14,7 @@ public class GrandParents {
 	}
 
 	public int dailyWalks(int milesPerWalk) {
-		if (this.milesPerWalk > 10) {
-			this.milesPerWalk += milesPerWalk;
-		}
-
-		return this.milesPerWalk;
+		return milesPerWalk;
 	}
 
 	public int caloriesIntakePerWeek(int caloriesIntake) {
